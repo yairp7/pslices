@@ -26,3 +26,9 @@ func Contains[T comparable](s []T, v T) (int, bool) {
 	}
 	return -1, false
 }
+
+func Fill[T any](s []T, val T) {
+	for i := 0; i < len(s); i++ {
+		s[i] = val
+	}
+}
